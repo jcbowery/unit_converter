@@ -13,3 +13,15 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+
+## Running Docker Image
+
+```
+sudo docker run \
+  -e PHX_SERVER=true \
+  -e SECRET_KEY_BASE=$(mix phx.gen.secret) \
+  -e PHX_HOST=localhost \
+  -e PORT=4000 \
+  -p 4000:4000 \
+  unit_converter:0.0.1
+```
