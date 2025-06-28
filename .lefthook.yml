@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      run: mix format --check-formatted
+      verbose: true
+    credo:
+      run: mix credo --strict
+      verbose: true
+    test:
+      run: mix test
+      verbose: true
+    detect-secrets:
+      run: detect-secrets-hook --baseline .secrets.baseline
+      verbose: true
