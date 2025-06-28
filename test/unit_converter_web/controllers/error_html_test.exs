@@ -10,6 +10,6 @@ defmodule UnitConverterWeb.ErrorHTMLTest do
 
   test "renders 500.html" do
     assert render_to_string(UnitConverterWeb.ErrorHTML, "500", "html", []) ==
-      "Internal Server Error"
+             "Internal Server Error"
   end
 end
