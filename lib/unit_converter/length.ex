@@ -1,4 +1,8 @@
 defmodule UnitConverter.Length do
+  @moduledoc """
+  converts units to meteres then to desired unt.
+  """
+
   @conversion_chart %{
     # Metric (in meters)
     mm: 0.001,
