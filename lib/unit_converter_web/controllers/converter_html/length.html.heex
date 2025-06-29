@@ -1,0 +1,59 @@
+<.form for={%{}} action={~p"/result"} method="post" class="box">
+  <div class="field">
+    <label for="fromUnits" class="label">Unit to convert from</label>
+    <div class="control">
+      <div class="select is-fullwidth">
+        <select id="fromUnits" name="from_unit" data-qa="fromUnit">
+          <option value="mm">millimeter</option>
+          <option value="cm">centimeter</option>
+          <option value="m">meter</option>
+          <option value="km">kilometer</option>
+          <option value="in">inch</option>
+          <option value="ft">foot</option>
+          <option value="yd">yard</option>
+          <option value="mi">mile</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="toUnits" class="label">Unit to convert to</label>
+    <div class="control">
+      <div class="select is-fullwidth">
+        <select id="toUnits" name="to_unit" data-qa="toUnit">
+          <option value="mm">millimeter</option>
+          <option value="cm">centimeter</option>
+          <option value="m">meter</option>
+          <option value="km">kilometer</option>
+          <option value="in">inch</option>
+          <option value="ft">foot</option>
+          <option value="yd">yard</option>
+          <option value="mi">mile</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="lengthField" class="label">Enter the length to convert</label>
+    <div class="control">
+      <input
+        class="input"
+        type="number"
+        id="lengthField"
+        name="length"
+        data-qa="value"
+        placeholder="Enter length"
+        step="any"
+        min="1"
+      />
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="control">
+      <button class="button is-primary" type="submit">Convert</button>
+    </div>
+  </div>
+</.form>
