@@ -15,3 +15,4 @@ unit_converter-*.tar
 npm-debug.log
 /assets/node_modules/
 .lexical
+screenshots

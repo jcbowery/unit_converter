@@ -17,7 +17,9 @@ defmodule UnitConverterWeb.Router do
   scope "/", UnitConverterWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", ConverterController, :home
+    get "/length", ConverterController, :length
+    post "/result", ConverterController, :result
   end
 
   # Other scopes may use custom stacks.

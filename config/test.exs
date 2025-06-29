@@ -22,3 +22,13 @@ config :phoenix, :plug_init_mode, :runtime
 # Enable helpful, but potentially expensive runtime checks
 config :phoenix_live_view,
   enable_expensive_runtime_checks: true
+
+config :unit_converter, UnitConverterWeb.Endpoint,
+  http: [port: 4002],
+  server: true
+
+config :unit_converter, :sql_sandbox, true
+
+config :wallaby, driver: Wallaby.Chrome
+config :wallaby, screenshot_dir: "screenshots"
+config :wallaby, screenshot_on_failure: true
